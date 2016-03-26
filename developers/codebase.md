@@ -79,6 +79,7 @@ Package to access the rascal. The rascal is the "configuration file" defined by 
 
 * **runners/** \\
 A runner is the function to call in a worker. Simple runners *(not likelly to change)* are put here.
+
 * **runtime.py** \\
 Module to handle global variables.
 
