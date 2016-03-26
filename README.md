@@ -5,7 +5,10 @@
 
 #### Contributing to the documentation
 
-Checkout the [sources at Github](https://github.com/OfflineIMAP/imapfw-documentation). Contributors in the Collaborators team can [work online at GitBook](https://www.gitbook.com/book/offlineimap/imapfw-documentation/details).
+Checkout the [sources at
+Github](https://github.com/OfflineIMAP/imapfw-documentation). Contributors in
+the `Collaborators team` (at Github) can [work online at
+GitBook](https://www.gitbook.com/book/offlineimap/imapfw-documentation/details).
 
 #### Downloads
 
