@@ -29,71 +29,71 @@ Since `init` is in the same package, we can check this [`imapfw/init.py`]({{ sou
 
 The modules and sub-packages in [`imapfw`]({{ sources }}/imapfw):
 
-* **actions/** \\
+* **actions/**
 Package of all the available actions at CLI. Each action is only using the required ressources it needs from what imapfw provides.
 
-* **annotation.py** \\
+* **annotation.py**
 The Python3 annotations used in the codebase.
 
-* **api/** \\
+* **api/**
 The exposed API. The purpose is to make proper indirection of the real code to allow higher flexibility and a better organization. Used in the `rascal`.
 
-* **architects/** \\
+* **architects/**
 Internal library to factorize code dedicated to the art of architecturing. This provides predefined environements/architectures handling workers, communication between workers, etc.
 
-* **concurrency/** \\
+* **concurrency/**
 Package providing concurrency.
 
-* **conf/** \\
+* **conf/**
 Package about configuring the runtime environement. Also, enables access to the CLI options.
 
-* **constants.py** \\
+* **constants.py**
 Where to store the constants.
 
-* **controllers/** \\
+* **controllers/**
 Controllers available, to be used on top of a driver.
 
-* **drivers/** \\
+* **drivers/**
 Low-level to manipulate data of a repository (Maildir, IMAP, etc).
 
-* **edmp.py** \\
+* **edmp.py**
 Event-driven message passing: communication between workers.
 
-* **engines/** \\
+* **engines/**
 Engines allow to apply some processing logic to the connected end-point(s) (e.g.: synchronization).
 
-* **error.py** \\
+* **error.py**
 Exceptions used in imapfw.
 
-* **imap/** \\
+* **imap/**
 Handles the IMAP protocol.
 
-* **interface.py** \\
+* **interface.py**
 Allow to check the internal/public interfaces. Reinforce unit testing and legacy compatibility.
 
-* **offlineimap/** \\
+* **offlineimap/**
 Internal package dedicated to the `offlineimap` action.
 
-* **rascal.py** \\
+* **rascal.py**
 Package to access the rascal. The rascal is the "configuration file" defined by the user. The framework will use objects and call functions defined here.
 
-* **runners/** \\
+* **runners/**
 A runner is the function to call in a worker. Simple runners *(not likelly to change)* are put here.
 
-* **runtime.py** \\
+* **runtime.py**
 Module to handle global variables.
 
-* **shells/** \\
+* **shells/**
 Package dedicated to the `shell` action.
 
-* **testing/** \\
+* **testing/**
 Package dedicated to the `unittests` action.
 
-* **toolkit.py** \\
+* **toolkit.py**
 Some factorized features that are not worth a dedicated module.
 
-* **types/** \\
+* **types/**
 The high-level types imapfw is working with (messages, repositories, accounts, etc). Expect them to be used by advanced users from the rascal.
 
-* **ui/** \\
+* **ui/**
 Package for the user interface.
