@@ -6,7 +6,7 @@ A good start is to run the command and look at the CLI options:
 $ ./imapfw.py -h
 usage: imapfw [-h] [--log-level {0,1,2,3}] [-c {multiprocessing,threading}]
               [-r RASCAL]
-              [-d {all,callbacks,imap,controllers,drivers,architects,managers,emitters,workers}]
+              [-d {all,<...debug...modes...>}]
               [-v]
               ACTION ...
 
@@ -20,7 +20,7 @@ optional arguments:
                         the concurrency backend to use (default is
                         multiprocessing)
   -r RASCAL             the rascal file to use
-  -d {all,callbacks,imap,controllers,drivers,architects,managers,emitters,workers}, --debug {all,callbacks,imap,controllers,drivers,architects,managers,emitters,workers}
+  -d {all,callbacks,imap,controllers,drivers,architects,managers,emitters,workers}
                         enable debugging for the requested partial(s)
   -v                    show program's version number and exit
 
