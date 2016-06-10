@@ -12,8 +12,8 @@ class MyShell(shells.Shell):
         # Create a message object.
         self.message = types.message.Message(2)
 
-        # Register the object to get access to it in the session. The registered
-        # variable must be an attribute (`self.variable_name`).
+        # Register the object to get access to it during the session. The
+        # registered variable must be an attribute (`self.variable_name`).
         self.register('message')
 
     def session(self):
@@ -30,3 +30,11 @@ class MyShell(shells.Shell):
 
         print("Session stopped.")
 ```
+
+So in the rascal, we define the shell name (here `Myshell`) and what the shell
+does:
+
+* `beforeSession`: prepare a session.
+* `session`: run pre-defined code (non-interactive) or enter in interactive
+  mode.
+* `afterSession`: what to do once the session is done.

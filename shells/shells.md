@@ -18,3 +18,9 @@ The shells can be used in 3 ways:
 * interactive mode;
 * non-interactive mode;
 * a mix a both.
+
+A shell is started with a simple command line like:
+
+``` bash
+imapfw shell MyShell
+```
