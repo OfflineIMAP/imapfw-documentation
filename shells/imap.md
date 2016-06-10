@@ -25,9 +25,9 @@ At first, we configure the repository to use (here: `RemoteImap`). It has the
 remote and credentials configured.
 
 Next, we define what we want to do during the session. The `shells.DriveDriver`
-has the `buildDriver()` method to enable control of the IMAP driver via
+has the `buildDriver()` helper to enable control of the IMAP driver via
 `self.d` or `self.driver` (both are the same).
 
 Internally, the IMAP driver (`drivers.Imap`) of the repository is run in a
-worker (thread of process). So, `self.d` is a proxy to "remotly" control the
+worker (thread of process). So, `self.d` is a proxy to "remotely" control the
 real driver.
